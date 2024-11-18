@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgroErp.Server", "AgroErp.Server\AgroErp.Server.csproj", "{0CE51631-F3DE-44EF-910F-BCC988C80B6E}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "agroerp.client", "agroerp.client\agroerp.client.esproj", "{5E388268-0EFF-4C81-81FF-868CB7300C68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DA5203DA-7540-4710-94E3-212AF7789E22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CE51631-F3DE-44EF-910F-BCC988C80B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CE51631-F3DE-44EF-910F-BCC988C80B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CE51631-F3DE-44EF-910F-BCC988C80B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CE51631-F3DE-44EF-910F-BCC988C80B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E388268-0EFF-4C81-81FF-868CB7300C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E388268-0EFF-4C81-81FF-868CB7300C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E388268-0EFF-4C81-81FF-868CB7300C68}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5E388268-0EFF-4C81-81FF-868CB7300C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E388268-0EFF-4C81-81FF-868CB7300C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E388268-0EFF-4C81-81FF-868CB7300C68}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {93EA6246-7FE8-4516-8BE0-B6368D950AD7}
+	EndGlobalSection
+EndGlobal

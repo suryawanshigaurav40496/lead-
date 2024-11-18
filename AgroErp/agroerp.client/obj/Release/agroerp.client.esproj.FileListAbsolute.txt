@@ -1,0 +1,1 @@
+D:\Masdag Training\dotnet2\AgroErp\agroerp.client\obj\Release\agroerp.client.esproj.CoreCompileInputs.cache

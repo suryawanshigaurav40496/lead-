@@ -1,0 +1,95 @@
+<div class="container">
+  <h2 class="title">Contacts</h2>
+
+  <button (click)="toggleForm()" class="toggle-button">
+    {{ showForm ? 'Cancel' : 'Create New Contact' }}
+  </button>
+
+  <div *ngIf="showForm">
+    <form [formGroup]="contactForm" (ngSubmit)="addContact()" class="contact-form">
+      <div class="form-group">
+        <label for="contactOwner">Contact Owner:</label>
+        <input id="contactOwner" formControlName="contactOwner" class="form-control" placeholder="Select Owner" />
+      </div>
+
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input id="firstName" formControlName="firstName" required class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="middleName">Middle Name:</label>
+        <input id="middleName" formControlName="middleName" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input id="lastName" formControlName="lastName" required class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input id="dateOfBirth" type="date" formControlName="dateOfBirth" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input id="email" formControlName="email" required class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="phoneNo">Phone No:</label>
+        <input id="phoneNo" formControlName="phoneNo" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="currentAddress">Current Address:</label>
+        <textarea id="currentAddress" formControlName="currentAddress" class="form-control"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="permanentAddress">Permanent Address:</label>
+        <textarea id="permanentAddress" formControlName="permanentAddress" class="form-control"></textarea>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <label>
+          <input id="emailOptOut" type="checkbox" formControlName="emailOptOut" />
+          Email Opt-Out
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="leadSource">Lead Source:</label>
+        <input id="leadSource" formControlName="leadSource" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" formControlName="description" class="form-control"></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">Create Contact</button>
+    </form>
+  </div>
+
+ <!-- <h3 class="existing-contacts-title">Existing Contacts</h3> -->
+  <div class="contact-list-container">
+    <table class="contact-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Permanent Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let contact of contacts" class="contact-item">
+          <td>{{ contact.firstName }} {{ contact.lastName }}</td>
+          <td>{{ contact.email }}</td>
+          <td>{{ contact.permanentAddress }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
